@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7834F3CF18EA7C530075468D /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7834F3CE18EA7C530075468D /* MapViewController.m */; };
+		7834F3D118EA7C660075468D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7834F3D018EA7C660075468D /* MapKit.framework */; };
+		7834F3D418EA831F0075468D /* Place.m in Sources */ = {isa = PBXBuildFile; fileRef = 7834F3D318EA831F0075468D /* Place.m */; };
+		78C0029918E9196100C68D9F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C0029818E9196100C68D9F /* Foundation.framework */; };
+		78C0029B18E9196100C68D9F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C0029A18E9196100C68D9F /* CoreGraphics.framework */; };
+		78C0029D18E9196100C68D9F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C0029C18E9196100C68D9F /* UIKit.framework */; };
+		78C002A318E9196100C68D9F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 78C002A118E9196100C68D9F /* InfoPlist.strings */; };
+		78C002A518E9196100C68D9F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C002A418E9196100C68D9F /* main.m */; };
+		78C002A918E9196100C68D9F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C002A818E9196100C68D9F /* AppDelegate.m */; };
+		78C002AC18E9196100C68D9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78C002AA18E9196100C68D9F /* Main.storyboard */; };
+		78C002AF18E9196100C68D9F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C002AE18E9196100C68D9F /* ViewController.m */; };
+		78C002B118E9196100C68D9F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78C002B018E9196100C68D9F /* Images.xcassets */; };
+		78C002B818E9196200C68D9F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C002B718E9196200C68D9F /* XCTest.framework */; };
+		78C002B918E9196200C68D9F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C0029818E9196100C68D9F /* Foundation.framework */; };
+		78C002BA18E9196200C68D9F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C0029C18E9196100C68D9F /* UIKit.framework */; };
+		78C002C218E9196200C68D9F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 78C002C018E9196200C68D9F /* InfoPlist.strings */; };
+		78C002C418E9196200C68D9F /* OZPostcodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C002C318E9196200C68D9F /* OZPostcodeTests.m */; };
+		78C002CE18E919A400C68D9F /* aus_clean.csv in Resources */ = {isa = PBXBuildFile; fileRef = 78C002CD18E919A400C68D9F /* aus_clean.csv */; };
+		78C002D018E919A900C68D9F /* nz_clean.csv in Resources */ = {isa = PBXBuildFile; fileRef = 78C002CF18E919A900C68D9F /* nz_clean.csv */; };
+		78C002D318E91BCC00C68D9F /* PostcodeModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 78C002D118E91BCC00C68D9F /* PostcodeModel.xcdatamodeld */; };
+		78C002D518E91E0E00C68D9F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C002D418E91E0E00C68D9F /* CoreData.framework */; };
+		78C002DF18E91F7800C68D9F /* Postcode.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C002DE18E91F7800C68D9F /* Postcode.m */; };
+		78C002E218E91FB200C68D9F /* GlobalMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C002E118E91FB200C68D9F /* GlobalMethod.m */; };
+		78C002EA18E9203C00C68D9F /* postcodeFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C002E918E9203C00C68D9F /* postcodeFactory.m */; };
+		78C002ED18E921D600C68D9F /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C002EC18E921D600C68D9F /* MBProgressHUD.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		78C002BB18E9196200C68D9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78C0028D18E9196100C68D9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78C0029418E9196100C68D9F;
+			remoteInfo = OZPostcode;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7834F3CD18EA7C530075468D /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		7834F3CE18EA7C530075468D /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		7834F3D018EA7C660075468D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		7834F3D218EA831F0075468D /* Place.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Place.h; sourceTree = "<group>"; };
+		7834F3D318EA831F0075468D /* Place.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Place.m; sourceTree = "<group>"; };
+		78C0029518E9196100C68D9F /* OZPostcode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OZPostcode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		78C0029818E9196100C68D9F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		78C0029A18E9196100C68D9F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		78C0029C18E9196100C68D9F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		78C002A018E9196100C68D9F /* OZPostcode-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OZPostcode-Info.plist"; sourceTree = "<group>"; };
+		78C002A218E9196100C68D9F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		78C002A418E9196100C68D9F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		78C002A618E9196100C68D9F /* OZPostcode-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OZPostcode-Prefix.pch"; sourceTree = "<group>"; };
+		78C002A718E9196100C68D9F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		78C002A818E9196100C68D9F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		78C002AB18E9196100C68D9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		78C002AD18E9196100C68D9F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		78C002AE18E9196100C68D9F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		78C002B018E9196100C68D9F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		78C002B618E9196200C68D9F /* OZPostcodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OZPostcodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		78C002B718E9196200C68D9F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		78C002BF18E9196200C68D9F /* OZPostcodeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OZPostcodeTests-Info.plist"; sourceTree = "<group>"; };
+		78C002C118E9196200C68D9F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		78C002C318E9196200C68D9F /* OZPostcodeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OZPostcodeTests.m; sourceTree = "<group>"; };
+		78C002CD18E919A400C68D9F /* aus_clean.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = aus_clean.csv; sourceTree = "<group>"; };
+		78C002CF18E919A900C68D9F /* nz_clean.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = nz_clean.csv; sourceTree = "<group>"; };
+		78C002D218E91BCC00C68D9F /* PostcodeModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PostcodeModel.xcdatamodel; sourceTree = "<group>"; };
+		78C002D418E91E0E00C68D9F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		78C002DD18E91F7800C68D9F /* Postcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Postcode.h; sourceTree = "<group>"; };
+		78C002DE18E91F7800C68D9F /* Postcode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Postcode.m; sourceTree = "<group>"; };
+		78C002E018E91FB200C68D9F /* GlobalMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalMethod.h; sourceTree = "<group>"; };
+		78C002E118E91FB200C68D9F /* GlobalMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalMethod.m; sourceTree = "<group>"; };
+		78C002E818E9203C00C68D9F /* postcodeFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = postcodeFactory.h; sourceTree = "<group>"; };
+		78C002E918E9203C00C68D9F /* postcodeFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = postcodeFactory.m; sourceTree = "<group>"; };
+		78C002EB18E921D600C68D9F /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		78C002EC18E921D600C68D9F /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		78C0029218E9196100C68D9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7834F3D118EA7C660075468D /* MapKit.framework in Frameworks */,
+				78C002D518E91E0E00C68D9F /* CoreData.framework in Frameworks */,
+				78C0029B18E9196100C68D9F /* CoreGraphics.framework in Frameworks */,
+				78C0029D18E9196100C68D9F /* UIKit.framework in Frameworks */,
+				78C0029918E9196100C68D9F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78C002B318E9196200C68D9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78C002B818E9196200C68D9F /* XCTest.framework in Frameworks */,
+				78C002BA18E9196200C68D9F /* UIKit.framework in Frameworks */,
+				78C002B918E9196200C68D9F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		78C0028C18E9196100C68D9F = {
+			isa = PBXGroup;
+			children = (
+				78C002E718E9202300C68D9F /* FactoryMethod */,
+				78C002E318E9201000C68D9F /* MBProgressHUD */,
+				78C002E018E91FB200C68D9F /* GlobalMethod.h */,
+				78C002E118E91FB200C68D9F /* GlobalMethod.m */,
+				78C002D918E91F2500C68D9F /* Class */,
+				78C002D118E91BCC00C68D9F /* PostcodeModel.xcdatamodeld */,
+				78C002CD18E919A400C68D9F /* aus_clean.csv */,
+				78C002CF18E919A900C68D9F /* nz_clean.csv */,
+				78C0029E18E9196100C68D9F /* OZPostcode */,
+				78C002BD18E9196200C68D9F /* OZPostcodeTests */,
+				78C0029718E9196100C68D9F /* Frameworks */,
+				78C0029618E9196100C68D9F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		78C0029618E9196100C68D9F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				78C0029518E9196100C68D9F /* OZPostcode.app */,
+				78C002B618E9196200C68D9F /* OZPostcodeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		78C0029718E9196100C68D9F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7834F3D018EA7C660075468D /* MapKit.framework */,
+				78C002D418E91E0E00C68D9F /* CoreData.framework */,
+				78C0029818E9196100C68D9F /* Foundation.framework */,
+				78C0029A18E9196100C68D9F /* CoreGraphics.framework */,
+				78C0029C18E9196100C68D9F /* UIKit.framework */,
+				78C002B718E9196200C68D9F /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		78C0029E18E9196100C68D9F /* OZPostcode */ = {
+			isa = PBXGroup;
+			children = (
+				78C002A718E9196100C68D9F /* AppDelegate.h */,
+				78C002A818E9196100C68D9F /* AppDelegate.m */,
+				78C002AA18E9196100C68D9F /* Main.storyboard */,
+				78C002AD18E9196100C68D9F /* ViewController.h */,
+				78C002AE18E9196100C68D9F /* ViewController.m */,
+				78C002B018E9196100C68D9F /* Images.xcassets */,
+				78C0029F18E9196100C68D9F /* Supporting Files */,
+				7834F3CD18EA7C530075468D /* MapViewController.h */,
+				7834F3CE18EA7C530075468D /* MapViewController.m */,
+			);
+			path = OZPostcode;
+			sourceTree = "<group>";
+		};
+		78C0029F18E9196100C68D9F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				78C002A018E9196100C68D9F /* OZPostcode-Info.plist */,
+				78C002A118E9196100C68D9F /* InfoPlist.strings */,
+				78C002A418E9196100C68D9F /* main.m */,
+				78C002A618E9196100C68D9F /* OZPostcode-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		78C002BD18E9196200C68D9F /* OZPostcodeTests */ = {
+			isa = PBXGroup;
+			children = (
+				78C002C318E9196200C68D9F /* OZPostcodeTests.m */,
+				78C002BE18E9196200C68D9F /* Supporting Files */,
+			);
+			path = OZPostcodeTests;
+			sourceTree = "<group>";
+		};
+		78C002BE18E9196200C68D9F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				78C002BF18E9196200C68D9F /* OZPostcodeTests-Info.plist */,
+				78C002C018E9196200C68D9F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		78C002D918E91F2500C68D9F /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				7834F3D218EA831F0075468D /* Place.h */,
+				7834F3D318EA831F0075468D /* Place.m */,
+				78C002DD18E91F7800C68D9F /* Postcode.h */,
+				78C002DE18E91F7800C68D9F /* Postcode.m */,
+			);
+			name = Class;
+			sourceTree = "<group>";
+		};
+		78C002E318E9201000C68D9F /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				78C002EB18E921D600C68D9F /* MBProgressHUD.h */,
+				78C002EC18E921D600C68D9F /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		78C002E718E9202300C68D9F /* FactoryMethod */ = {
+			isa = PBXGroup;
+			children = (
+				78C002E818E9203C00C68D9F /* postcodeFactory.h */,
+				78C002E918E9203C00C68D9F /* postcodeFactory.m */,
+			);
+			name = FactoryMethod;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		78C0029418E9196100C68D9F /* OZPostcode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78C002C718E9196200C68D9F /* Build configuration list for PBXNativeTarget "OZPostcode" */;
+			buildPhases = (
+				78C0029118E9196100C68D9F /* Sources */,
+				78C0029218E9196100C68D9F /* Frameworks */,
+				78C0029318E9196100C68D9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OZPostcode;
+			productName = OZPostcode;
+			productReference = 78C0029518E9196100C68D9F /* OZPostcode.app */;
+			productType = "com.apple.product-type.application";
+		};
+		78C002B518E9196200C68D9F /* OZPostcodeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78C002CA18E9196200C68D9F /* Build configuration list for PBXNativeTarget "OZPostcodeTests" */;
+			buildPhases = (
+				78C002B218E9196200C68D9F /* Sources */,
+				78C002B318E9196200C68D9F /* Frameworks */,
+				78C002B418E9196200C68D9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				78C002BC18E9196200C68D9F /* PBXTargetDependency */,
+			);
+			name = OZPostcodeTests;
+			productName = OZPostcodeTests;
+			productReference = 78C002B618E9196200C68D9F /* OZPostcodeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		78C0028D18E9196100C68D9F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Matthew Lu";
+				TargetAttributes = {
+					78C0029418E9196100C68D9F = {
+						DevelopmentTeam = SZYJ32EXLF;
+					};
+					78C002B518E9196200C68D9F = {
+						TestTargetID = 78C0029418E9196100C68D9F;
+					};
+				};
+			};
+			buildConfigurationList = 78C0029018E9196100C68D9F /* Build configuration list for PBXProject "OZPostcode" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 78C0028C18E9196100C68D9F;
+			productRefGroup = 78C0029618E9196100C68D9F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				78C0029418E9196100C68D9F /* OZPostcode */,
+				78C002B518E9196200C68D9F /* OZPostcodeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		78C0029318E9196100C68D9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78C002B118E9196100C68D9F /* Images.xcassets in Resources */,
+				78C002D018E919A900C68D9F /* nz_clean.csv in Resources */,
+				78C002A318E9196100C68D9F /* InfoPlist.strings in Resources */,
+				78C002CE18E919A400C68D9F /* aus_clean.csv in Resources */,
+				78C002AC18E9196100C68D9F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78C002B418E9196200C68D9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78C002C218E9196200C68D9F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		78C0029118E9196100C68D9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78C002D318E91BCC00C68D9F /* PostcodeModel.xcdatamodeld in Sources */,
+				78C002E218E91FB200C68D9F /* GlobalMethod.m in Sources */,
+				78C002AF18E9196100C68D9F /* ViewController.m in Sources */,
+				7834F3CF18EA7C530075468D /* MapViewController.m in Sources */,
+				78C002A918E9196100C68D9F /* AppDelegate.m in Sources */,
+				7834F3D418EA831F0075468D /* Place.m in Sources */,
+				78C002A518E9196100C68D9F /* main.m in Sources */,
+				78C002EA18E9203C00C68D9F /* postcodeFactory.m in Sources */,
+				78C002DF18E91F7800C68D9F /* Postcode.m in Sources */,
+				78C002ED18E921D600C68D9F /* MBProgressHUD.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78C002B218E9196200C68D9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78C002C418E9196200C68D9F /* OZPostcodeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		78C002BC18E9196200C68D9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 78C0029418E9196100C68D9F /* OZPostcode */;
+			targetProxy = 78C002BB18E9196200C68D9F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		78C002A118E9196100C68D9F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78C002A218E9196100C68D9F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		78C002AA18E9196100C68D9F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78C002AB18E9196100C68D9F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		78C002C018E9196200C68D9F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78C002C118E9196200C68D9F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		78C002C518E9196200C68D9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		78C002C618E9196200C68D9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		78C002C818E9196200C68D9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OZPostcode/OZPostcode-Prefix.pch";
+				INFOPLIST_FILE = "OZPostcode/OZPostcode-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		78C002C918E9196200C68D9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OZPostcode/OZPostcode-Prefix.pch";
+				INFOPLIST_FILE = "OZPostcode/OZPostcode-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7ED6EC5A-6E46-4F56-9165-EFAD46300AF7";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		78C002CB18E9196200C68D9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OZPostcode.app/OZPostcode";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OZPostcode/OZPostcode-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "OZPostcodeTests/OZPostcodeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		78C002CC18E9196200C68D9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OZPostcode.app/OZPostcode";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OZPostcode/OZPostcode-Prefix.pch";
+				INFOPLIST_FILE = "OZPostcodeTests/OZPostcodeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		78C0029018E9196100C68D9F /* Build configuration list for PBXProject "OZPostcode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78C002C518E9196200C68D9F /* Debug */,
+				78C002C618E9196200C68D9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78C002C718E9196200C68D9F /* Build configuration list for PBXNativeTarget "OZPostcode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78C002C818E9196200C68D9F /* Debug */,
+				78C002C918E9196200C68D9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78C002CA18E9196200C68D9F /* Build configuration list for PBXNativeTarget "OZPostcodeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78C002CB18E9196200C68D9F /* Debug */,
+				78C002CC18E9196200C68D9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		78C002D118E91BCC00C68D9F /* PostcodeModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				78C002D218E91BCC00C68D9F /* PostcodeModel.xcdatamodel */,
+			);
+			currentVersion = 78C002D218E91BCC00C68D9F /* PostcodeModel.xcdatamodel */;
+			path = PostcodeModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 78C0028D18E9196100C68D9F /* Project object */;
+}
